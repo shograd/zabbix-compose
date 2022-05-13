@@ -20,8 +20,8 @@ services:
       - postgres-server
     environment:
       - POSTGRES_USER=zabbix
-      - POSTGRES_PASSWORD=zabbix
-      - POSTGRES_DB=zabbixNew
+      - POSTGRES_PASSWORD=qwerty12Q
+      - POSTGRES_DB=zabbix
       - ZBX_HISTORYSTORAGETYPES=log,text #Zabbix configuration variables
       - ZBX_DEBUGLEVEL=1
       - ZBX_HOUSEKEEPINGFREQUENCY=1
@@ -51,8 +51,8 @@ services:
       - postgres-server
     environment:
       - POSTGRES_USER=zabbix
-      - POSTGRES_PASSWORD=zabbix
-      - POSTGRES_DB=zabbixNew
+      - POSTGRES_PASSWORD=qwerty12Q
+      - POSTGRES_DB=zabbix
       - ZBX_SERVER_HOST=server
       - ZBX_POSTMAXSIZE=64M
       - PHP_TZ=Europe/Moscow
@@ -92,9 +92,9 @@ services:
     volumes:
       - /var/lib/postgresql/data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=zabbix
+      - POSTGRES_PASSWORD=qwerty12Q
       - POSTGRES_USER=zabbix
-      - POSTGRES_DB=zabbixNew
+      - POSTGRES_DB=zabbix
     healthcheck:
       test: ["CMD-SHELL", "pg_isready"]
       interval: 10s
